@@ -10,7 +10,10 @@ from PIL import Image
 import warnings
 warnings.filterwarnings('ignore')
 import os
-os.chdir('C:\\Users\\노준영\\PycharmProjects\\pythonProject')
+#os.chdir('C:\\Users\\노준영\\PycharmProjects\\pythonProject')
+# 스크립트 파일의 디렉토리로 작업 디렉토리 변경
+current_directory = os.path.dirname(__file__)
+os.chdir(current_directory)
 
 img = Image.open('./kt_logo.png')
 
